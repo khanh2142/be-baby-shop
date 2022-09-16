@@ -1,0 +1,35 @@
+.benefit {
+  margin-top: 100px;
+  padding: 100px 2rem !important;
+}
+
+.benefit__title {
+  font-family: "Arima", cursive;
+  font-size: 55px;
+  line-height: 65px;
+  font-weight: 600;
+}
+
+.benefit__desc {
+  font-size: 20px;
+}
+
+.benefit__list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.benefit__image {
+  background-image: url("https://themes.muffingroup.com/be/babyshop/wp-content/uploads/2021/10/babyshop-features-pic1.webp");
+  background-position: 50% 50%;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.benefit__button {
+  margin-top: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

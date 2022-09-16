@@ -1,0 +1,25 @@
+.button {
+  padding: 10px 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border-radius: 5px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.button:hover {
+  opacity: 0.8;
+  transition: 0.1s linear;
+}
+
+.btn-black {
+  background-color: #000;
+  color: #fff;
+}
+
+.btn-silver {
+  background-color: #ececec;
+  color: #626262;
+}

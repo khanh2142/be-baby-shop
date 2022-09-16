@@ -1,0 +1,21 @@
+.benefitItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.benefitItem__image {
+  width: 64px;
+  height: auto;
+  object-fit: cover;
+}
+
+.benefitItem__title {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.benefitItem__content {
+  color: #6a717c;
+}

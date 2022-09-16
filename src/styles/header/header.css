@@ -1,0 +1,118 @@
+.header__logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+
+  position: relative;
+}
+
+.header__logo::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 1px;
+  background-color: rgba(0, 0, 0, 0.1);
+  left: 0;
+  bottom: 0;
+}
+
+.header__logo-image {
+  max-height: 50px;
+}
+
+.header__logo-image img {
+  height: 100%;
+  width: 200px;
+}
+
+.header__list {
+  margin-top: 5px;
+  display: flex;
+  gap: 10px;
+  justify-content: end;
+  align-items: center;
+}
+
+.headerNavLink {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  padding: 10px;
+}
+
+.headerNavLink:hover .headerNavLink__border {
+  display: block;
+}
+
+.headerNavLink:hover .headerNavLink__content {
+  color: #ebc989;
+}
+
+.headerNavLink.active {
+  color: #ebc989 !important;
+}
+
+.headerNavLink.active .headerNavLink__border {
+  display: block;
+}
+
+.headerNavLink__content {
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.headerNavLink__border {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  background-color: #ebc989;
+  border-radius: 1px;
+  display: none;
+  transition: 0.4s linear;
+}
+
+.header__submenu {
+  margin-top: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  gap: 5px;
+}
+
+.headerSubLink {
+  padding: 10px;
+  cursor: pointer;
+  display: flex;
+  gap: 10px;
+}
+
+.headerSubLink__icon {
+  position: relative;
+}
+
+.headerSubLink__icon i {
+  font-size: 20px;
+}
+
+.headerSubLink__count {
+  position: absolute;
+  top: -10px;
+  right: -12px;
+  background-color: #ebc989;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 10px;
+  color: #fff;
+}
+
+.headerSubLink__desc {
+  font-weight: 600;
+}

@@ -1,0 +1,152 @@
+.product {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  box-shadow: rgba(255, 255, 255, 1) 0px 2px 8px 0px;
+}
+
+.product__image {
+  position: relative;
+  cursor: pointer;
+}
+
+.product__image:hover .product__image-preview {
+  display: block;
+}
+
+.product__image img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.product__image-preview {
+  display: none;
+  animation: swap 0.1s linear;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-position: 50% 50%;
+  background-size: cover;
+}
+
+.product__preview-list {
+  animation: show 0.3s linear;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  height: 80px;
+  background-color: #fff;
+}
+
+.product__preview-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.product__preview-item:hover {
+  color: #ebc989;
+}
+
+.product__preview-item i {
+  font-size: 20px;
+}
+
+.product__sale {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  padding: 3px 5px;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 13px;
+  font-weight: 600;
+  background-color: #ebc989;
+  border-radius: 3px;
+}
+
+.product__name {
+  text-align: center;
+  font-size: 18px;
+}
+
+.product__color {
+  display: flex;
+  gap: 10px;
+}
+
+.product__color-item {
+  position: relative;
+  cursor: pointer;
+  width: 23px;
+  height: 23px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+.product__color-item span {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+}
+
+.product__color-item:hover .product__color-name {
+  display: flex;
+}
+
+.product__color-name {
+  display: none;
+  position: absolute;
+  top: -30px;
+  left: -11px;
+  background-color: #000;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 3px;
+  font-size: 10px;
+  text-transform: capitalize;
+  font-weight: 600;
+  transition: linear;
+}
+
+.product__price {
+  display: flex;
+  gap: 10px;
+  color: #ebc989;
+  align-items: center;
+}
+
+.product__price-root {
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.product__price-sale {
+  text-decoration: line-through;
+  opacity: 0.8;
+}
+
+@keyframes swap {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes show {
+  from {
+    height: 0;
+  }
+}

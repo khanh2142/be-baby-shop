@@ -1,0 +1,16 @@
+.bannerSale {
+  padding: 0 2rem !important;
+}
+
+.bannerSale__holiday {
+  height: 722px;
+  width: 100%;
+  background-position: 50% 50%;
+  background-size: cover;
+}
+
+.bannerSale__special {
+  width: 100%;
+  background: #eaf0f7;
+  height: 722px;
+}

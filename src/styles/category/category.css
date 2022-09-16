@@ -1,0 +1,39 @@
+.category {
+  /* background-color: darkseagreen; */
+  margin-top: 30px;
+  padding: 0 2rem !important;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.categoryItem {
+  cursor: pointer;
+  height: 80px;
+  font-size: 24px;
+  font-family: "Arima", cursive;
+  font-weight: 600;
+  color: #6a717c;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.categoryItem:hover .categoryItem__link {
+  display: block;
+}
+
+.categoryItem__link {
+  display: none;
+  transition: 0.1s linear;
+  animation: show 0.1s linear;
+}
+
+@keyframes show {
+  from {
+    font-size: 0;
+  }
+  to {
+    font-size: 24px;
+  }
+}

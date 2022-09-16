@@ -1,0 +1,48 @@
+.headerAd__container {
+  background-color: #101015;
+  color: rgb(255, 255, 255, 0.6);
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.headerAd__main {
+  display: flex;
+  justify-content: space-between;
+}
+
+.headerAd__main-link {
+  color: #cfb481 !important;
+}
+
+.headerAd__main-link:hover {
+  text-decoration: underline !important;
+}
+
+.headerAd__main-list {
+  display: flex;
+  gap: 20px;
+}
+
+.headerAd__main-item {
+  position: relative;
+  transition: 0.4s linear;
+}
+
+.headerAd__main-item::after {
+  position: absolute;
+  content: "";
+  height: 75%;
+  width: 1px;
+  right: -10px;
+  top: 20%;
+  background-color: rgb(255, 255, 255, 0.2);
+}
+
+.headerAd__main-item:last-child::after {
+  display: none;
+}
+
+.headerAd__main-item:hover {
+  text-decoration: underline;
+  color: #fff;
+}
